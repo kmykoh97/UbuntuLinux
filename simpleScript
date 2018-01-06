@@ -1,0 +1,17 @@
+~/.bashrc
+
+export EDITOR = 'nano'
+export VISUAL = 'nano'
+alias update = 'sudo apt-get update'
+alias upgrade = 'sudo apt-get upgrade'
+alias remove = 'sudo apt-get auto-remove'
+
+updateupgrade() {
+        builtin update "$*" && upgrade
+}
+alias kmykohuu = 'updateupgrade'
+
+cdls() {
+        builtin cd "$*" && ls
+}
+alias cd = 'cdls'
