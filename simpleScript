@@ -15,3 +15,5 @@ cdls() {
         builtin cd "$*" && ls
 }
 alias cd = 'cdls'
+
+source .bashrc
