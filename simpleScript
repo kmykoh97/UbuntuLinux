@@ -1,11 +1,16 @@
 ~/.bashrc
 
+#change default terminal editor from vim to nano
 export EDITOR='nano'
 export VISUAL='nano'
+
+#alias variables shortcut
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
 alias remove='sudo apt-get auto-remove'
+alias vultr='ssh root@45.77.118.131'
 
+#functions shortcut
 updateupgrade() {
         #builtin sudo apt-get update "$*" && sudo apt-get upgrade#cannot run
 }
@@ -15,5 +20,7 @@ cdls() {
         builtin cd "$*" && ls
 }
 alias cd='cdls'
+
+
 
 source .bashrc
