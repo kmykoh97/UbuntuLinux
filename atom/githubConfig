@@ -5,3 +5,7 @@ git config --global user.email "kmykoh97@gmail.com"
 #for one repository only
 git config --user.name "kmykoh97"
 git config --user.email "kmykoh97@gmail.com"
+
+#git credential helper set up
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=999999999999999999999999'
