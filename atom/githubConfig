@@ -1,1 +1,7 @@
-git config 
+#for repositories in whole computer
+git config --global user.name "kmykoh97"
+git config --global user.email "kmykoh97@gmail.com"
+
+#for one repository only
+git config --user.name "kmykoh97"
+git config --user.email "kmykoh97@gmail.com"
