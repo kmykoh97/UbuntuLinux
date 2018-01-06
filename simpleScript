@@ -7,7 +7,7 @@ alias upgrade='sudo apt-get upgrade'
 alias remove='sudo apt-get auto-remove'
 
 updateupgrade() {
-        builtin sudo apt-get update "$*" && sudo apt-get upgrade
+        #builtin sudo apt-get update "$*" && sudo apt-get upgrade#cannot run
 }
 alias kmykohuu='updateupgrade'
 
