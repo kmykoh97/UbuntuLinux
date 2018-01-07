@@ -8,3 +8,5 @@ run program
 view embedded atom setting
 ## ctrl s
 save
+## F5
+run python or compile c++

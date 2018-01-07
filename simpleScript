@@ -10,7 +10,7 @@ alias upgrade='sudo apt-get upgrade'
 alias remove='sudo apt-get auto-remove'
 alias vultr='ssh root@45.77.118.131'
 alias gitconfig='git config --user.name "kmykoh97"'
-
+alias sudo='sudo -s'
 
 #functions shortcut
 updateupgrade() {
