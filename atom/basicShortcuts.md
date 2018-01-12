@@ -1,4 +1,4 @@
-# These are some of my frequently used atom edito hoercut keys. They are recorded for my own reference but everyone is free to refer them
+# These are some of my frequently used atom editor shortcut keys. They are recorded for my own reference but everyone is free to refer to them
 
 ## ctrl shift m
 preview markdown language

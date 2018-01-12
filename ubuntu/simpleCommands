@@ -1,0 +1,10 @@
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get autoremove
+sudo -s
+top
+man ...
+ls -l -a -al
+nano
+vim
+gedit
