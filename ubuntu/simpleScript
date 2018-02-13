@@ -1,6 +1,6 @@
-~/.bashrc
+nano ~/.bashrc
 
-#change default terminal editor from vim to nano
+#change default terminal editor from vi to nano
 export EDITOR='nano'
 export VISUAL='nano'
 
@@ -13,16 +13,17 @@ alias gitconfig='git config --user.name "kmykoh97"'
 alias sudo='sudo -s'
 
 #functions shortcut
-updateupgrade() {
-        #builtin sudo apt-get update "$*" && sudo apt-get upgrade#cannot run
+#when calling uu, run both update and upgrade
+uu() {
+  update
+  upgrade
 }
-alias kmykohuu='updateupgrade'
+alias uu='uu'
 
+#when calling cd, call ls automatically
 cdls() {
-        builtin cd "$*" && ls
+  builtin cd "$*" && ls
 }
 alias cd='cdls'
-
-
 
 source .bashrc

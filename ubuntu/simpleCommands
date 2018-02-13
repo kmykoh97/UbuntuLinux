@@ -8,3 +8,47 @@ ls -l -a -al
 nano
 vim
 gedit
+echo
+
+
+### files permission
+chmod - modify file access rights
+su - temporarily become the superuser
+sudo - temporarily become the superuser
+chown - change file ownership
+chgrp - change a file's group ownership
+
+usage ie: $chmod 600 some-file
+777-(rwxrwxrwx) No restrictions on permissions. Anybody may do anything. Generally not a desirable setting.
+755-(rwxr-xr-x) The file's owner may read, write, and execute the file. All others may read and execute the file. This setting is common for programs that are used by all users.
+700-(rwx------) The file's owner may read, write, and execute the file. Nobody else has any rights. This setting is useful for programs that only the owner may use and must be kept private from others.
+666-(rw-rw-rw-) All users may read and write the file.
+644-(rw-r--r--) The owner may read and write a file, while all others may only read the file. A common setting for data files that everybody may read, but only the owner may change.
+600-(rw-------) The owner may read and write a file. All others have no rights. A common setting for data files that the owner wants to keep private.
+
+### directories permission
+777-(rwxrwxrwx) No restrictions on permissions. Anybody may list files, create new files in the directory and delete files in the directory. Generally not a good setting.
+755-(rwxr-xr-x) The directory owner has full access. All others may list the directory, but cannot create files nor delete them. This setting is common for directories that you wish to share with other users.
+700-(rwx------) The directory owner has full access. Nobody else has any rights. This setting is useful for directories that only the owner may use and must be kept private from others.
+
+### job control
+ps - list the processes running on the system
+kill - send a signal to one or more processes (usually to "kill" a process)
+jobs - an alternate way of listing your own processes
+bg - put a process in the background
+fg - put a process in the forground
+
+### PATH
+to view path: $echo $PATH
+to add PATH: $export PATH=$PATH:directory
+
+### if-else
+if expression; then echo "your expression"
+elif expression; then expression
+else echo "something"
+fi
+
+### for
+for something in something; do
+commands
+done
