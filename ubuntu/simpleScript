@@ -11,6 +11,7 @@ alias remove='sudo apt-get auto-remove'
 alias vultr='ssh root@45.77.118.131'
 alias gitconfig='git config --user.name "kmykoh97"'
 alias sudo='sudo -s'
+alias anaconda='anaconda-navigator'
 
 #functions shortcut
 #when calling uu, run both update and upgrade
